@@ -17,13 +17,13 @@
 			if(points == null) throw new ArgumentNullException(nameof(points));
 			if(points.Count < 2) throw new ArgumentException("List must contains more then one point",nameof(points));
             if (points.GroupBy(point => new {point.X, point.Y}).Any(g => g.Count() > 1)) throw new ArgumentException("List has duplicates");
-            //wwda
+            //wwda  wwwwwwwwwww
             
             var length = points.Count;
             var xAxis = points.Select(p => p.X).OrderBy(x => x).ToArray();
             var yAxis = points.Select(p => p.Y).OrderBy(y => y).ToArray();
 
-            //Select area for rectangle wdawdawdaw
+            //Select area for rectangle wdawdawdaw  
 
             var minX = xAxis[0];
             var maxX = xAxis[length - 1];
