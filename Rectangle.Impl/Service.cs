@@ -17,7 +17,11 @@
 			if(points == null) throw new ArgumentNullException(nameof(points));
 			if(points.Count < 2) throw new ArgumentException("List must contains more then one point",nameof(points));
             if (points.GroupBy(point => new {point.X, point.Y}).Any(g => g.Count() > 1)) throw new ArgumentException("List has duplicates");
+<<<<<<< HEAD
             //wwda  wwwwwwwwwww 22222222222
+=======
+            //wwda  wwwwwwwwwww 555555555
+>>>>>>> 2
             
             var length = points.Count;
             var xAxis = points.Select(p => p.X).OrderBy(x => x).ToArray();
