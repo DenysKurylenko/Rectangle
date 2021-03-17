@@ -23,7 +23,7 @@
             var xAxis = points.Select(p => p.X).OrderBy(x => x).ToArray();
             var yAxis = points.Select(p => p.Y).OrderBy(y => y).ToArray();
 
-            //Select area for rectangle 
+            //Select area for rectangle wdawdawdaw
 
             var minX = xAxis[0];
             var maxX = xAxis[length - 1];
